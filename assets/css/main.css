@@ -1,0 +1,257 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #f5402d, #fe6332);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    margin-top: 6px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header__navbar-link,
+.header__navbar-item {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__navbar-item,
+.header__navbar-link,
+.header__navbar-icon-link { 
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar-link:hover,
+.header__navbar-item:hover,
+.header__navbar-icon:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__navbar-item--qr:hover .header__qr{
+    display: block;
+}
+
+.header__navbar-item--bold {
+    /* font-size: 1.5rem; */
+    font-weight: 400;
+}
+
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #fb9086;
+    right: -10px;
+    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-icon-link,
+.header__navbar-icon {
+    margin: 0 3px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon {
+    font-size: 1.5rem;
+}
+
+.remove-pointer {
+    cursor: text;
+    color: var(--white-color); /*Ghi đề thuộc tính hover*/
+}
+
+/*Header QR code*/
+.header__qr {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 188px;
+    left: 11%;
+    top: 150%;
+    padding: 8px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    animation: fadeIn ease 0.5s;
+    will-change: opacity;
+}
+
+.header__qr::before {
+    width: 100%;
+    height: 15%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-download:nth-child(1) {
+    height: 16px;
+    margin-left: 11px;
+}
+
+.header__qr-download:nth-child(2) {
+    height: 16px;
+    margin-right: 11px;
+}
+
+/*Header Notification*/
+.header__notify {
+    position: absolute;
+    top: 180%;
+    width: 404px;
+    background-color: var(--white-color);
+    right: 0;
+    border: 1px solid #d3d3d3;
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease-in 0.25s;
+    will-change: opacity, transform; /*trình duyệt web sẽ tối ưu cho 2 thằng này*/
+    display: none;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 6px;
+    top: -30px;
+}
+
+.header__notify::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 26px;
+    top: -18px;
+    right: 0;
+}
+
+.header__navbar-link-notify:hover .header__notify {
+    display: block;
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+    color: #999;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 40px;
+    margin: 0 12px;
+    user-select: none;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item {
+    display: flex;
+}
+
+.header__notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+.header__notify-item--viewed {
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
+.header__notify-link {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    text-decoration: none;
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info {
+    margin-left: 12px;
+}
+
+.header__notify-name {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.header__notify-des {
+    line-height: 0.5rem;
+    font-size: 1.2rem;
+    color: #756f6e;
+    margin-top: 4px;
+}
+
+.header__notify-footer {
+    text-align: center;
+}
+
+.header__notify-footer-btn {
+    display: block;
+    text-decoration: none; 
+    color: var(--text-color);
+    padding: 14px 16px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+/*Animation*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
