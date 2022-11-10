@@ -13,6 +13,11 @@
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
+
+.pt-36 {
+    padding-top: 36px;
+}
+
 .mr-8 {
     margin-right: 8px;
 }
@@ -28,6 +33,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -38,9 +44,28 @@ html {
     width: 100%; /*Trong trường hợp không muốn sử dụng width: 1200 thì thêm class này*/
 }
 
-.grid_row{ /*Những thẻ nằm trong class này thì nằm ngang và xuống hàng nếu vượt quá chiều ngang tối đa*/
+.grid__row{ /*Những thẻ nằm trong class này thì nằm ngang và xuống hàng nếu vượt quá chiều ngang tối đa*/
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/* .grid__column {
+    
+} */
+
+/* test */
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 /* Modal */
@@ -80,7 +105,7 @@ html {
     height: 36px;
     border: none;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 3px;
     font-size: 1.5rem;
     padding: 0;
     outline: none;
@@ -88,10 +113,13 @@ html {
     color: var(--text-color);
     background-color: var(--white-color);
     line-height: 1.6rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 .btn.btn--primary {
@@ -104,7 +132,65 @@ html {
     cursor: not-allowed;
 }
 
+.select-price {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
 
+.select-price__label {
+    font-size: 1.4rem;
+}
+
+.select-price i {
+    font-size: 1.2rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+}
+
+.select-price__list {
+    top: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    list-style: none;
+    padding: 8px 16px;
+    display: none;
+}
+
+.select-price__link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 8px 0;
+}
+
+.select-price__list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    top: -10px;
+    left: 0;
+}
+
+.select-price__link:hover {
+    color: var(--primary-color);
+}
+
+.select-price:hover .select-price__list {
+    display: block;
+}
 /*Animation*/
 @keyframes fadeIn {
     from {

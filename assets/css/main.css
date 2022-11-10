@@ -850,3 +850,135 @@
     line-height: 38px;
 }
 
+/*App Container layout*/
+.app__container {
+    background-color: #f5f5f5;
+}
+
+.category {
+    border-radius: 3px;
+    background-color: var(--white-color);
+}
+
+.category__heading {
+    margin-top: 0;
+    color: var(--text-color);
+    font-size: 1.7rem;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category__heading i {
+    margin-right: 4px;
+    font-size: 1.4rem;
+}
+
+.category-list {
+    margin-left: 9px;
+    list-style: none;
+    padding: 0 0 8px 0;
+}
+
+.category-item--active .category-item__link {
+    color: var(--primary-color);
+}
+
+.category-item--active .category-item__link::before {
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    position: absolute;
+    border: 4px solid;
+    border-color: transparent transparent transparent var(--primary-color);
+}
+
+.category-item__link {
+    position: relative;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 6px 16px;
+    display: block;
+    text-transform: uppercase;
+    transition: right linear 0.1s;
+    right: 0;
+}
+
+.category-item__link:hover {
+    right: -2px;
+    color: var(--primary-color);
+}
+
+/*Home sort + filter*/
+
+.home-filter {
+    background-color: rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 3px;
+}
+
+.home-filter__title {
+    font-size: 1.4rem;
+    color: #555555;
+    margin-right: 16px;
+}
+
+.home-filter__btn {
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.home-filter__paginate {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-qty {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
+
+.home-filter__page-btn {
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+    background-color: var(--white-color);
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-btn i {
+    margin: auto;
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+.home-filter__page-btn--disabled {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.home-filter__page-btn--disabled i {
+    color: #ccc;
+}
