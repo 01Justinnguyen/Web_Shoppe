@@ -47,8 +47,8 @@ html {
 .grid__row{ /*Những thẻ nằm trong class này thì nằm ngang và xuống hàng nếu vượt quá chiều ngang tối đa*/
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 /* .grid__column {
@@ -57,14 +57,20 @@ html {
 
 /* test */
 .grid__column-2 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 16.6667%;
 }
 
+.grid__column-2-4 {
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .grid__column-10 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 83.3334%;
 }
 
