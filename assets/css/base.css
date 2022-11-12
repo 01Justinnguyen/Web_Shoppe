@@ -12,6 +12,8 @@
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+
+    --star-gold-color: #ffce3e;
 }
 
 .pt-36 {
