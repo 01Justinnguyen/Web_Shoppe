@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -91,9 +91,9 @@
                             <span class="header__navbar-user-name">Nguyễn Thanh Phúc</span>
 
                             <ul class="header__navbar-user-list">
-                                <li class="header__navbar-user-item"><a href="">Tài khoản của tôi</a></li>
-                                <li class="header__navbar-user-item"><a href="">Đơn mua</a></li>
-                                <li class="header__navbar-user-item header__navbar-user-item--separate"><a href="">Đăng xuất</a></li>
+                                <li class="header__navbar-user-item"><a href="" class="home-product-link"> Tài khoản của tôi</a></li>
+                                <li class="header__navbar-user-item"><a href="" class="home-product-link"> Đơn mua</a></li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate"><a href="" class="home-product-link"> Đăng xuất</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -120,8 +120,8 @@
                             <div class="header__search-history">
                                 <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
                                 <ul class="header__search-history-list">
-                                    <li class="header__search-history-item"><a href="">Kém chống nắng</a></li>
-                                    <li class="header__search-history-item"><a href="">Play Station</a></li>
+                                    <li class="header__search-history-item"><a href="" class="home-product-link"> Kém chống nắng</a></li>
+                                    <li class="header__search-history-item"><a href="" class="home-product-link"> Play Station</a></li>
                                 </ul>
                             </div>
 
@@ -280,47 +280,371 @@
                             <div class="grid__row">
                                 <div class="grid__column-2-4">
                                     <!-- Product -->
-                                    <div class="home-product-item">
-                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/a5dcaaacd9fc8262e1199e305ce4ef5d_tn);"></div>
-                                        <h4 class="home-product-item__name">
-                                            ÁO POLO THỂ THAO NAM PROMAX-S1 LOGO THƯƠNG HIỆU COOLMATE
-                                        </h4>
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/a5dcaaacd9fc8262e1199e305ce4ef5d_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                ÁO POLO THỂ THAO NAM PROMAX-S1 LOGO THƯƠNG HIỆU COOLMATE
+                                            </h4>
 
-                                        <div class="home-product-item__price">
-                                            <span class="home-product-item__price-old">₫245.000</span>
-                                            <span class="home-product-item__price-current">₫220.000</span>
-                                        </div>
-
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item--liked">
-                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rate">
-                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
-                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
-                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
-                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫245.000</span>
+                                                <span class="home-product-item__price-current">₫220.000</span>
                                             </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
 
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">COOLMATE</span>
-                                            <span class="home-product-item__origin-name">Việt Nam</span>
-                                        </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
 
-                                        <div class="home-product-item__favorite">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">COOLMATE</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
 
-                                        <div class="home-product-item__sale">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__label">GIẢM</span>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/081c25bb1044e3e97c6fab7e781f18da_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                Balo Đựng Laptop Mark Ryden MR9299 Sức Chứa 17 Inch Có Cổng Sạc USB Tiện Dụng
+                                            </h4>
+    
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫745.000</span>
+                                                <span class="home-product-item__price-current">₫720.000</span>
+                                            </div>
+    
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+    
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Mark Ryden</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+    
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+    
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/e4c19401fe8b4d193c0efc6eae5df389_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                Dép nam adidas mẫu mới nhất dép adidas quai ngang thiết kế độc lạ đế cao su form dáng thể thao chống thấm nước full box
+                                            </h4>
+    
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫245.000</span>
+                                                <span class="home-product-item__price-current">₫200.000</span>
+                                            </div>
+    
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+    
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Adidas</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+    
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+    
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/aa00815266813d0ba4550ee625de9550_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                Bộ Củ Cáp Sạc Nhanh 20W chính hãng SD DESIGN HG 06 sạc ổn định an toàn cho điện thoại ip 6 đến 13 pro max
+                                            </h4>
+    
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫145.000</span>
+                                                <span class="home-product-item__price-current">₫120.000</span>
+                                            </div>
+    
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">12 đã bán</span>
+                                            </div>
+    
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">SD Design</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+    
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+    
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/d6083342e9aa5d45e6148b60290340af_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                Tai nghe nhét tai KUULAA KL-O84 chống ồn tích hợp micrô và điều khiển âm lượng
+                                            </h4>
+    
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫125.000</span>
+                                                <span class="home-product-item__price-current">₫89.000</span>
+                                            </div>
+    
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">8 đã bán</span>
+                                            </div>
+    
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">KUULAA</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+    
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+    
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/a5dcaaacd9fc8262e1199e305ce4ef5d_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                ÁO POLO THỂ THAO NAM PROMAX-S1 LOGO THƯƠNG HIỆU COOLMATE
+                                            </h4>
+
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫245.000</span>
+                                                <span class="home-product-item__price-current">₫220.000</span>
+                                            </div>
+
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">COOLMATE</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/081c25bb1044e3e97c6fab7e781f18da_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                Balo Đựng Laptop Mark Ryden MR9299 Sức Chứa 17 Inch Có Cổng Sạc USB Tiện Dụng
+                                            </h4>
+    
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫745.000</span>
+                                                <span class="home-product-item__price-current">₫720.000</span>
+                                            </div>
+    
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+    
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Mark Ryden</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+    
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+    
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- Product -->
+                                    <a href="" class="home-product-link"> 
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/e4c19401fe8b4d193c0efc6eae5df389_tn);"></div>
+                                            <h4 class="home-product-item__name">
+                                                Dép nam adidas mẫu mới nhất dép adidas quai ngang thiết kế độc lạ đế cao su form dáng thể thao chống thấm nước full box
+                                            </h4>
+    
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">₫245.000</span>
+                                                <span class="home-product-item__price-current">₫200.000</span>
+                                            </div>
+    
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item--liked">
+                                                    <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rate">
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 đã bán</span>
+                                            </div>
+    
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Adidas</span>
+                                                <span class="home-product-item__origin-name">Việt Nam</span>
+                                            </div>
+    
+                                            <div class="home-product-item__favorite">
+                                                <i class="fa-solid fa-check"></i>
+                                                <span>Yêu thích</span>
+                                            </div>
+    
+                                            <div class="home-product-item__sale">
+                                                <span class="home-product-item__percent">43%</span>
+                                                <span class="home-product-item__label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -400,8 +724,8 @@
 
                     <div class="auth-form__aside">
                         <div class="auth-form__help">
-                            <span class="auth-form__forgot"><a href="">Quên mật khẩu</a></span>
-                            <span class="auth-form__need-help"><a href="">Cần trợ giúp?</a></span>
+                            <span class="auth-form__forgot"><a href="" class="home-product-link"> Quên mật khẩu</a></span>
+                            <span class="auth-form__need-help"><a href="" class="home-product-link"> Cần trợ giúp?</a></span>
                         </div>
                     </div>
 
